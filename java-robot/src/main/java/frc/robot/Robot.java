@@ -28,7 +28,7 @@ public class Robot extends LoggedRobot {
    */
   @Override
   public void robotInit() {
-    // Set up the main robot container. 
+    // Set up the main robot container.
     // This will perform all our button bindings, and put our autonomous chooser on the dashboard.
     m_robotContainer = new RobotContainer();
     Logger.recordMetadata("ProjectName", "Quest3S-Swerve");
@@ -59,7 +59,7 @@ public class Robot extends LoggedRobot {
     // Get the DriveSubsystem from the RobotContainer
     DriveSubsystem m_robotDrive = m_robotContainer.getDriveSubsystem();
     // Periodically clean up the control messages processed on the Quest headset
-    m_robotDrive.cleanUpOculusMessages();
+    m_robotDrive.cleanupQuestNavMessages();
   }
 
   /** This function is called once each time the robot enters Disabled mode. */
