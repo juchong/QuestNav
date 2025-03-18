@@ -303,40 +303,19 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 336173539}
-  - component: {fileID: 336173538}
   - component: {fileID: 336173540}
+  - component: {fileID: 336173545}
+  - component: {fileID: 336173544}
+  - component: {fileID: 336173543}
+  - component: {fileID: 336173542}
+  - component: {fileID: 336173541}
   m_Layer: 0
-  m_Name: FRCGameObject
+  m_Name: QuestNavCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &336173538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336173537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb42b4655facea54e87c326fcc93986a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frameIndex: 0
-  timeStamp: 0
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 0}
-  eulerAngles: {x: 0, y: 0, z: 0}
-  cameraRig: {fileID: 1567031737}
-  teamInput: {fileID: 360581113}
-  ipAddressText: {fileID: 1964602099}
-  conStateText: {fileID: 1375737370}
-  teamUpdateButton: {fileID: 844328117}
-  vrCamera: {fileID: 1567031735}
-  vrCameraRoot: {fileID: 1567031736}
-  resetTransform: {fileID: 336173539}
 --- !u!4 &336173539
 Transform:
   m_ObjectHideFlags: 0
@@ -364,6 +343,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3279de15e6065941a9310672ef31109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &336173541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336173537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84aa431546284adea2793a13d73b0c75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &336173542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336173537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8526f30383ef4210a330c000d7177b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &336173543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336173537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c6424f09ef44f7b1c36ad0851e4905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &336173544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336173537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93185ac1dea41aa85732d36d4432424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &336173545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336173537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2232b9c9720047cd946c88ea547af7ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameIndex: 0
+  timeStamp: 0
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+  eulerAngles: {x: 0, y: 0, z: 0}
+  cameraRig: {fileID: 1567031737}
+  teamInput: {fileID: 360581113}
+  ipAddressText: {fileID: 1964602099}
+  conStateText: {fileID: 1375737370}
+  teamUpdateButton: {fileID: 844328117}
+  vrCamera: {fileID: 1567031735}
+  vrCameraRoot: {fileID: 1567031736}
+  resetTransform: {fileID: 336173539}
+  networkConnection: {fileID: 336173544}
+  heartbeatManager: {fileID: 336173543}
+  commandProcessor: {fileID: 336173542}
+  uiManager: {fileID: 336173541}
 --- !u!1 &336191857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,7 +1374,7 @@ GameObject:
   - component: {fileID: 844328118}
   - component: {fileID: 844328117}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Team Update Buttton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -7,7 +7,7 @@ using UnityEngine;
 using WebSocketSharp;
 using Random = System.Random;
 
-namespace NetworkTables
+namespace QuestNav.Network.NetworkTables_CSharp
 {
     public class Nt4Client
     {

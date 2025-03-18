@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace NetworkTables
+namespace QuestNav.Network.NetworkTables_CSharp
 {
     public class TopicValue<T>
     {

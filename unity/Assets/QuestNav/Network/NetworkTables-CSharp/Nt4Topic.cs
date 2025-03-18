@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace NetworkTables
+namespace QuestNav.Network.NetworkTables_CSharp
 {
     public class Nt4Topic
     {

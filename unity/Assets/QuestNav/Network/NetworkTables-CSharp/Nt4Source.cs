@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace NetworkTables
+namespace QuestNav.Network.NetworkTables_CSharp
 {
     public class Nt4Source
     {
